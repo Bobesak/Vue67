@@ -4,21 +4,55 @@
 
 <template>
   <div class="header">
-    <p class="AuthorTitle">Bobes</p>
+    <div class="header-left">
+      <a class="Hover" href="https://chatgpt.com/" target="_blank">
+        <p class="goat">Click me</p>
+      </a>
+    </div>
+    <div class="header-right">
+      <p class="Titles">Bobes</p>
+      <p class="Titles">About Me</p>
+      <p class="Titles">Skills</p>
+      <p class="Titles">Projects</p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.header {
+.header{
   display: flex;
   width: 100%;
   height: 20%;
-  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-  justify-content: center;
-}
-.AuthorTitle {
-  color: dimgray;
-  font-size: 200%;
-  margin: 15px;
+  
+  
+  .header-right{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    .Titles{
+      Font-Size: 16px;
+
+    }
+  }
+  
+  .header-left{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5%;
+    .goat{
+      width: 80px;
+      Font-Size: 16px;
+      background : #1F1F1F;
+      border-radius: 25px;
+      text-align: center;
+      color: white;
+    }
+    .Hover:hover{
+      border-color: #1F1F1F;
+      box-shadow: 0 0 30px #FAFAFA;
+    }
+  }
 }
 </style>
