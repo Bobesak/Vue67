@@ -6,7 +6,7 @@
   <div class="header">
     <div class="header-left">
       <a class="Hover" href="https://chatgpt.com/" target="_blank">
-        <p class="goat">Click me</p>
+        <button class="goat">Click me</button>
       </a>
     </div>
     <div class="header-right">
@@ -49,9 +49,9 @@
       text-align: center;
       color: white;
     }
-    .Hover:hover{
+    .goat:hover{
       border-color: #1F1F1F;
-      box-shadow: 0 0 30px #FAFAFA;
+      box-shadow: 0 0 6px #1F1F1F;
     }
   }
 }
