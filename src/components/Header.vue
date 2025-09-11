@@ -27,36 +27,31 @@ onUnmounted(() =>{
 <template>
   <header class>
     <div class="navbar">
-    <div class="header-left">
-    <div class="Logo"></div>
-      <p class="Titles">Bobes</p>
-
-    </div>
-    <div class="header-right">
-      <RouterLink to="/" class="Titles"><a>About Me</a></RouterLink>
-      <RouterLink to="/Skills" class="Titles"><a>Skills</a></RouterLink>
-      <p class="Titles">Projects</p>`
-    </div>
+      <div class="header-left">
+      <div class="Logo"></div>
+        <p class="Titles">Bobes</p>
+  
+      </div>
+      <div class="header-right">
+        <RouterLink to="/" class="Titles"><a>About Me</a></RouterLink>
+        <RouterLink to="/Skills" class="Titles"><a>Skills</a></RouterLink>
+        <p class="Titles">Projects</p>`
+      </div>
     </div>
   </header>
 </template>
 
 <style scoped>
 header{
-  display: flex;
-  width: 80%;
-  height: 20%;
-  border-radius: 30px;
-  border: 3px solid black;
-  margin: 0 auto;
-  background-color: White;
-  
   .navbar{
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 20%;
     border-radius: 30px;
+    border: 3px solid black;
     margin: 0 auto;
+    background-color: White;
+    
 
     .header-right{
       display: flex;
@@ -91,13 +86,7 @@ header{
 }
 header:is(.scrolled){
   position: fixed;
-  margin-top:0;
-  display: flex;
-  width: 80%;
-  height: 20%;
-  border-radius: 30px;
-  border: 3px solid black;
-  margin: 0 auto;
-  background-color: White;
+  margin-top: 0;
+  width: 100%;
 }
 </style>
