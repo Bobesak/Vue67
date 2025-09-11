@@ -3,6 +3,7 @@ import './style.css'
 import App from './App.vue'
 
 import Home from "./views/Home.vue";
+import Skills from "./views/Skills.vue";
 import {createWebHistory, createRouter} from "vue-router";
 
 
@@ -10,6 +11,7 @@ import {createWebHistory, createRouter} from "vue-router";
 
 const routes =[
     {path: '/', component: Home},
+    {path: '/Skills', component: Skills},
 ]
 
 const router = createRouter({
