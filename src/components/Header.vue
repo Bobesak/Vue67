@@ -5,9 +5,7 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <a class="Hover" href="https://chatgpt.com/" target="_blank">
-        <button class="goat">Click me</button>
-      </a>
+    <div class="Logo"></div>
     </div>
     <div class="header-right">
       <p class="Titles">Bobes</p>
@@ -21,37 +19,35 @@
 <style scoped>
 .header{
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 20%;
+  border-radius: 30px;
+  border: 3px solid black;
+  justify-self: center;
   
   
   .header-right{
     display: flex;
-    justify-content: space-around;
     width: 50%;
+    justify-content: space-around;
+    align-items: center;
     .Titles{
-      Font-Size: 16px;
-
+      Font-Size: 24px;
+      text-shadow: #444444 0 1px 1px;
     }
   }
   
   .header-left{
-    width: 50%;
+    width: 25%;
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-left: 5%;
-    .goat{
-      width: 80px;
-      Font-Size: 16px;
-      background : #1F1F1F;
-      border-radius: 25px;
-      text-align: center;
-      color: white;
-    }
-    .goat:hover{
-      border-color: #1F1F1F;
-      box-shadow: 0 0 6px #1F1F1F;
+    .Logo{
+      aspect-ratio: 1/1;
+      width: 150px;
+      background-image: url("src/assets/Logo.svg");
+      background-size : cover;
+      background-position: center center;
     }
   }
 }
