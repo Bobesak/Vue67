@@ -53,6 +53,7 @@ const showVtext = ref(false);
   border-bottom: #444444 1px solid;
   margin: 40px auto 0;
   text-wrap: wrap;
+  height: 1500px;
 
   .SkillLogo {
     min-width: 120px;
@@ -134,7 +135,10 @@ const showVtext = ref(false);
     border-radius 0.67s ease;
 
     /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-    min-width: 270px; /* uprav podle potřeby */
+    min-width: 900px; 
+    max-width: 900px;
+    min-height: 150px;
+    max-height: 150px;
   }
 
   /* Viditelný text */
@@ -159,7 +163,10 @@ const showVtext = ref(false);
     border-radius 0.67s ease;
 
     /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-    min-width: 270px; /* uprav podle potřeby */
+    min-width: 900px;
+    max-width: 900px;
+    min-height: 150px;
+    max-height: 150px;
   }
 
   /* Viditelný text */
@@ -184,7 +191,10 @@ const showVtext = ref(false);
     border-radius 0.67s ease;
 
     /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-    min-width: 270px; /* uprav podle potřeby */
+    min-width: 900px;
+    max-width: 900px;
+    min-height: 150px;
+    max-height: 150px;
   }
 
   /* Viditelný text */

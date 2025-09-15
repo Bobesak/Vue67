@@ -10,6 +10,7 @@ function sex() {
     
   }else{
     header.classList.remove('scrolled');
+
   }
 }
 
@@ -48,7 +49,7 @@ header{
     width: 80%;
     height: 20%;
     border-radius: 30px;
-    border: 3px solid black;
+    border-bottom: 1px solid #444444;
     margin: 0 auto;
     background-color: White;
     
@@ -56,8 +57,9 @@ header{
     .header-right{
       display: flex;
       width: 55%;
-      justify-content: space-around;
+      justify-content: right;
       align-items: center;
+      gap:40px;
 
       a{
         text-decoration: none;
@@ -77,7 +79,7 @@ header{
       .Logo{
         aspect-ratio: 1/1;
         width: 150px;
-        background-image: url("src/assets/Logo.svg");
+        background-image: url("src/assets/logo23.svg");
         background-size : cover;
         background-position: center center;
       }
@@ -86,7 +88,7 @@ header{
 }
 header:is(.scrolled){
   position: fixed;
-  margin-top: 0;
+  top: 0;
   width: 100%;
 }
 </style>
