@@ -4,4 +4,6 @@
 body {
     margin: 0;
     font-family: 'Satoshi', sans-serif;
+    background: linear-gradient(to bottom, #444444, #FFFFFF);
+
 }

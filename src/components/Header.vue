@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+
 import {onMounted, onUnmounted} from "vue";
 
 function sex() {
@@ -36,7 +37,7 @@ onUnmounted(() =>{
       <div class="header-right">
         <RouterLink to="/" class="Titles"><a>About Me</a></RouterLink>
         <RouterLink to="/Skills" class="Titles"><a>Skills</a></RouterLink>
-        <p class="Titles">Projects</p>`
+        <RouterLink to="/Project" class="Titles">Projects</RouterLink>`
       </div>
     </div>
   </header>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Header from "./components/Header.vue";
+
 function feetlicker() {
   const main = document.querySelector(".MainBody");
   if (main instanceof HTMLElement && window.scrollY > 0) {

@@ -3,6 +3,8 @@ import { ref } from 'vue';
 const showCText = ref(false);
 const showUtext = ref(false);
 const showVtext = ref(false);
+const showHtext = ref(false);
+const showRtext = ref(false);
 </script>
 
 <template>
@@ -39,6 +41,25 @@ const showVtext = ref(false);
              @mouseenter="showVtext = true" @mouseleave="showVtext = false">
         </div>
       </div>
+      <div class="InfoModule">
+        <p class="Htext" :class="{ visible: showHtext }">
+          started learning it in school and found out it was fun. <br>
+          So i thought to myself basic knowledge wouldnt hurt and learnt a bit properly :p
+        </p>
+        <div class="HSkillLogo"
+             @mouseenter="showHtext = true" @mouseleave="showHtext = false">
+        </div>
+      </div>
+      <div class="InfoModule">
+        <p class="Rtext" :class="{ visible: showRtext }">
+          I was introduced to Rider by a friend and have been using it since then, while it doesnt offer as much support as VSC i love it <br>
+          Rider is the goat <3
+        </p>
+        <div class="RSkillLogo"
+             @mouseenter="showRtext = true" @mouseleave="showRtext = false">
+        </div>
+      </div>
+      
     </div>
   </div>
 </div>
@@ -50,11 +71,12 @@ const showVtext = ref(false);
   flex-direction: column;
   width: 80%;
   border-radius: 30px;
-  border-bottom: #444444 1px solid;
+  border: #444444 1px solid;
   margin: 40px auto 0;
   text-wrap: wrap;
-  height: 1500px;
-
+  height: 1200px;
+  background: white;
+}
   .SkillLogo {
     min-width: 120px;
     min-height: 120px;
@@ -97,15 +119,42 @@ const showVtext = ref(false);
     margin-left: 30px;
     box-shadow: 2px 2px 8px #444444;
   }
+  .HSkillLogo {
+    min-width: 120px;
+    min-height: 120px;
+    width: 20%;
+    height: 20%;
+    background-image: url("src/assets/HTML5.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: #444444 1px solid;
+    border-radius: 30px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 8px #444444;
+  } 
+  .RSkillLogo {
+    min-width: 120px;
+    min-height: 120px;
+    width: 20%;
+    height: 20%;
+    background-image: url("src/assets/Rider.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: #444444 1px solid;
+    border-radius: 30px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 8px #444444;
+  }
 
   .main-header {
-    margin-left: 10px;
     font-size: 60px;
     text-align: left;
     border-top: #444444 1px solid;
     border-radius: 30px;
     padding-top: 15px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 
   .InfoModule {
@@ -143,6 +192,34 @@ const showVtext = ref(false);
 
   /* Viditelný text */
   .Ctext.visible {
+    border-radius: 30px;
+    border-top: #444444 1px solid;
+    border-bottom: #444444 1px solid;
+    padding: 10px;
+    opacity: 1;
+    visibility: visible;
+  } 
+.Rtext {
+    max-width: 60%;
+    font-size: 23px;
+
+    /* Text je vždy v layoutu, ale neviditelný */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Přechod opacity */
+    transition: opacity 0.67s ease,
+    border-radius 0.67s ease;
+
+    /* Minimální šířka, aby text zabíral místo i když je neviditelný */
+    min-width: 900px; 
+    max-width: 900px;
+    min-height: 150px;
+    max-height: 150px;
+  }
+
+  /* Viditelný text */
+  .Rtext.visible {
     border-radius: 30px;
     border-top: #444444 1px solid;
     border-bottom: #444444 1px solid;
@@ -206,5 +283,33 @@ const showVtext = ref(false);
     opacity: 1;
     visibility: visible;
   }
+.Htext {
+  max-width: 60%;
+  font-size: 23px;
+
+  /* Text je vždy v layoutu, ale neviditelný */
+  opacity: 0;
+  visibility: hidden;
+
+  /* Přechod opacity */
+  transition: opacity 0.67s ease,
+  border-radius 0.67s ease;
+
+  /* Minimální šířka, aby text zabíral místo i když je neviditelný */
+  min-width: 900px;
+  max-width: 900px;
+  min-height: 150px;
+  max-height: 150px;
 }
+
+/* Viditelný text */
+.Htext.visible {
+  border-radius: 30px;
+  border-top: #444444 1px solid;
+  border-bottom: #444444 1px solid;
+  padding: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+  
 </style>
