@@ -150,11 +150,13 @@ const showRtext = ref(false);
 
   .main-header {
     font-size: 60px;
-    text-align: left;
-    border-top: #444444 1px solid;
-    border-radius: 30px;
+    text-align: right;
     padding-top: 15px;
     padding-left: 20px;
+    padding-right: 14.2%;
+    border-bottom: #444 2px solid;
+    box-shadow: 2px 2px 8px #444444;
+    letter-spacing: 4px;
   }
 
   .InfoModule {

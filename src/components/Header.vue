@@ -1,6 +1,7 @@
 <script setup lang="ts">
 
 
+import GithubCard from './GithubCard.vue'
 import {onMounted, onUnmounted} from "vue";
 
 function sex() {
@@ -27,17 +28,16 @@ onUnmounted(() =>{
 </script>
 
 <template>
-  <header class>
+  <header>
     <div class="navbar">
       <div class="header-left">
       <div class="Logo"></div>
-        <p class="Titles">Bobes</p>
-  
+        <GithubCard />  
       </div>
       <div class="header-right">
-        <RouterLink to="/" class="Titles"><a>About Me</a></RouterLink>
-        <RouterLink to="/Skills" class="Titles"><a>Skills</a></RouterLink>
-        <RouterLink to="/Project" class="Titles">Projects</RouterLink>`
+        <RouterLink to="/" class="Titles">About Me</RouterLink>
+        <RouterLink to="/Skills" class="Titles">Skills</RouterLink>
+        <RouterLink to="/Project" class="Titles">Projects</RouterLink>
       </div>
     </div>
   </header>

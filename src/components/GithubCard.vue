@@ -5,8 +5,8 @@
       <h2><a :href="user.html_url" target="_blank">{{ user.name || user.login }}</a></h2>
       <p>{{ user.bio }}</p>
       <p v-if="user.location">📍 {{ user.location }}</p>
-      <p>👥 {{ user.followers }} followers • {{ user.following }} following</p>
-      <p>📦 {{ user.public_repos }} public repos</p>
+      <p> {{ user.followers }} followers <br> {{ user.following }} following</p>
+      <p> {{ user.public_repos }} public repos</p>
     </div>
   </div>
 </template>
@@ -31,10 +31,9 @@ onMounted(async () => {
 .github-card {
   display: flex;
   align-items: center;
-  background: #f6f8fa;
+  background: White;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   max-width: 400px;
 }
 .avatar {
@@ -46,6 +45,10 @@ onMounted(async () => {
 .info h2 {
   margin: 0;
   font-size: 1.2rem;
+}
+.info h2 a{
+  color: black;
+
 }
 .info a {
   text-decoration: none;
