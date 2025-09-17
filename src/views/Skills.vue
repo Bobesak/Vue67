@@ -21,6 +21,14 @@ const showRtext = ref(false);
         </p>
         <div class="SkillLogo"
              @mouseenter="showCText = true" @mouseleave="showCText = false">
+          <img src="/src/assets/CSharp.svg" 
+               style="
+               object-fit: cover;
+               object-position: center center;
+                width: 30%;
+                height: 30%;
+                align-self: center;">
+          </img>
         </div>
       </div>
       <div class="InfoModule">
@@ -30,6 +38,13 @@ const showRtext = ref(false);
         </p>
         <div class="USkillLogo"
              @mouseenter="showUtext = true" @mouseleave="showUtext = false">
+          <img src="/src/assets/Unity.svg"
+               style="
+               object-fit: cover;
+               object-position: center center;
+                width: 30%;
+                height: 30%;align-self: center;">
+          </img>
         </div>
       </div>
       <div class="InfoModule">
@@ -39,6 +54,13 @@ const showRtext = ref(false);
         </p>
         <div class="VSkillLogo"
              @mouseenter="showVtext = true" @mouseleave="showVtext = false">
+          <img src="/src/assets/vue.svg"
+               style="
+               object-fit: cover;
+               object-position: center center;
+                width: 30%;
+                height: 30%;align-self: center;">
+          </img>
         </div>
       </div>
       <div class="InfoModule">
@@ -48,6 +70,13 @@ const showRtext = ref(false);
         </p>
         <div class="HSkillLogo"
              @mouseenter="showHtext = true" @mouseleave="showHtext = false">
+          <img src="/src/assets/HTML5.svg"
+               style="
+               object-fit: cover;
+               object-position: center center;
+                width: 30%;
+                height: 30%;align-self: center;">
+          </img>
         </div>
       </div>
       <div class="InfoModule">
@@ -57,6 +86,13 @@ const showRtext = ref(false);
         </p>
         <div class="RSkillLogo"
              @mouseenter="showRtext = true" @mouseleave="showRtext = false">
+          <img src="/src/assets/Rider.svg"
+               style="
+               object-fit: cover;
+               object-position: center center;
+                width: 30%;
+                height: 30%;align-self: center;">
+          </img>
         </div>
       </div>
       
@@ -78,74 +114,66 @@ const showRtext = ref(false);
   background: white;
 }
   .SkillLogo {
+    display:flex;
     min-width: 120px;
     min-height: 120px;
     width: 20%;
     height: 20%;
-    background-image: url("src/assets/CSharp.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     outline: #444444 1px solid;
     border-radius: 30px;
     margin-left: 30px;
     box-shadow: 2px 2px 8px #444444;
+    justify-content: center;
+    
   }  
   .USkillLogo {
+    display:flex;
     min-width: 120px;
     min-height: 120px;
     width: 20%;
     height: 20%;
-    background-image: url("src/assets/Unity.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     outline: #444444 1px solid;
     border-radius: 30px;
     margin-left: 30px;
     box-shadow: 2px 2px 8px #444444;
+    justify-content: center;
   }
   .VSkillLogo {
     min-width: 120px;
     min-height: 120px;
     width: 20%;
-    height: 20%;
-    background-image: url("src/assets/vue.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 20%;    
+    display:flex;
     outline: #444444 1px solid;
     border-radius: 30px;
     margin-left: 30px;
     box-shadow: 2px 2px 8px #444444;
+    justify-content: center;
   }
   .HSkillLogo {
     min-width: 120px;
     min-height: 120px;
     width: 20%;
     height: 20%;
-    background-image: url("src/assets/HTML5.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display:flex;
     outline: #444444 1px solid;
     border-radius: 30px;
     margin-left: 30px;
     box-shadow: 2px 2px 8px #444444;
+    justify-content: center;
   } 
   .RSkillLogo {
     min-width: 120px;
     min-height: 120px;
     width: 20%;
     height: 20%;
-    background-image: url("src/assets/Rider.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display:flex;
     outline: #444444 1px solid;
     border-radius: 30px;
     margin-left: 30px;
+    filter: grayscale(1);
     box-shadow: 2px 2px 8px #444444;
+    justify-content: center;
   }
 
   .main-header {
@@ -154,10 +182,11 @@ const showRtext = ref(false);
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 14.2%;
+    box-shadow: 0px 15px 10px -12px #444444;
     border-bottom: #444 2px solid;
-    box-shadow: 2px 2px 8px #444444;
     letter-spacing: 4px;
   }
+  
 
   .InfoModule {
     justify-content: center;
