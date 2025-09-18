@@ -1,16 +1,19 @@
 
-<script>
-import RepoCard from '/src/components/RepoCard.vue';
+<script setup lang="ts">
+import RepoCard from "../components/RepoCard.vue";
 
 const projects = [
-  "cool-project",
-  "another-repo",
-  "my-favorite-repo"
+  "Zasobnik",
+    "petsimx",
 ];
 </script>
 <template>
   <div class="MainBody">
+      <header class="main-header">
+        Github Repositories
+      </header>
     <div class="main">
+      
       <RepoCard
           v-for="repo in projects"
           :key="repo"
@@ -33,5 +36,14 @@ const projects = [
   text-wrap: wrap;
   height: 1200px;
   background: white;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+.main-header{
+  text-align: center;
+  font-size: 4rem;
 }
 </style>
