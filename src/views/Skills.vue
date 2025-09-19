@@ -15,84 +15,54 @@ const showRtext = ref(false);
     </header>
     <div class="main-content">
       <div class="InfoModule">
-        <p class="Ctext" :class="{ visible: showCText }">
+        <p class="Text" :class="{ visible: showCText }">
           My First Language I learned and probably the one I enjoy working with the most.<br>
           I'm still a beginner but I'm aspiring to work with C# in the future.
         </p>
         <div class="SkillLogo"
              @mouseenter="showCText = true" @mouseleave="showCText = false">
-          <img src="/src/assets/CSharp.svg" 
-               style="
-               object-fit: cover;
-               object-position: center center;
-                width: 30%;
-                height: 30%;
-                align-self: center;">
-          </img>
+          <img src="/src/assets/CSharp.svg" class="Image">
         </div>
       </div>
       <div class="InfoModule">
-        <p class="Utext" :class="{ visible: showUtext }">
+        <p class="Text" :class="{ visible: showUtext }">
           Unity is the reason i got into coding originally and remains my hobby to this day. <br>
           i love messing around and learning how the engine functions work, albeit a newbie im trying to learn
         </p>
-        <div class="USkillLogo"
+        <div class="SkillLogo"
              @mouseenter="showUtext = true" @mouseleave="showUtext = false">
-          <img src="/src/assets/Unity.svg"
-               style="
-               object-fit: cover;
-               object-position: center center;
-                width: 30%;
-                height: 30%;align-self: center;">
-          </img>
+          <img src="/src/assets/Unity.svg" class="Image">
         </div>
       </div>
       <div class="InfoModule">
-        <p class="Vtext" :class="{ visible: showVtext }">
-          Vue.Js is the first and latest framework im trying to learn (as im typing this) and its my first step into the web world. <br>
-          Webpage making as a whole is new to me so im learning on the go and hopefully ill get good enough to make this web good looking :D
-        </p>
-        <div class="VSkillLogo"
+        <p class="Text" :class="{ visible: showVtext }">
+          I'm currently learning Vue.js — my first framework and my first step into web development.<br> Building websites is new to me, but I'm learning as I go and hope to make this one look great!        </p>
+        <div class="SkillLogo"
              @mouseenter="showVtext = true" @mouseleave="showVtext = false">
-          <img src="/src/assets/vue.svg"
-               style="
-               object-fit: cover;
-               object-position: center center;
-                width: 30%;
-                height: 30%;align-self: center;">
-          </img>
+          <img src="/src/assets/vue.svg" class="Image"
+               >
         </div>
       </div>
       <div class="InfoModule">
-        <p class="Htext" :class="{ visible: showHtext }">
+        <p class="Text" :class="{ visible: showHtext }">
           started learning it in school and found out it was fun. <br>
           So i thought to myself basic knowledge wouldnt hurt and learnt a bit properly :p
         </p>
-        <div class="HSkillLogo"
+        <div class="SkillLogo"
              @mouseenter="showHtext = true" @mouseleave="showHtext = false">
-          <img src="/src/assets/HTML5.svg"
-               style="
-               object-fit: cover;
-               object-position: center center;
-                width: 30%;
-                height: 30%;align-self: center;">
-          </img>
+          <img src="/src/assets/HTML5.svg" class="Image"
+               >
         </div>
       </div>
       <div class="InfoModule">
-        <p class="Rtext" :class="{ visible: showRtext }">
+        <p class="Text" :class="{ visible: showRtext }">
           I was introduced to Rider by a friend and have been using it since then, while it doesnt offer as much support as VSC i love it <br>
           Rider is the goat <3
         </p>
-        <div class="RSkillLogo"
+        <div class="SkillLogo"
              @mouseenter="showRtext = true" @mouseleave="showRtext = false">
-          <img src="/src/assets/Rider.svg"
-               style="
-               object-fit: cover;
-               object-position: center center;
-                width: 30%;
-                height: 30%;align-self: center;">
-          </img>
+          <img src="/src/assets/Rider.svg" class="Image"
+               >
         </div>
       </div>
       
@@ -101,6 +71,7 @@ const showRtext = ref(false);
 </div>
 </template>
 <style scoped>
+
 .MainBody
 {
   display: flex;
@@ -113,69 +84,6 @@ const showRtext = ref(false);
   height: 1200px;
   background: white;
 }
-  .SkillLogo {
-    display:flex;
-    min-width: 120px;
-    min-height: 120px;
-    width: 20%;
-    height: 20%;
-    outline: #444444 1px solid;
-    border-radius: 30px;
-    margin-left: 30px;
-    box-shadow: 2px 2px 8px #444444;
-    justify-content: center;
-    
-  }  
-  .USkillLogo {
-    display:flex;
-    min-width: 120px;
-    min-height: 120px;
-    width: 20%;
-    height: 20%;
-    outline: #444444 1px solid;
-    border-radius: 30px;
-    margin-left: 30px;
-    box-shadow: 2px 2px 8px #444444;
-    justify-content: center;
-  }
-  .VSkillLogo {
-    min-width: 120px;
-    min-height: 120px;
-    width: 20%;
-    height: 20%;    
-    display:flex;
-    outline: #444444 1px solid;
-    border-radius: 30px;
-    margin-left: 30px;
-    box-shadow: 2px 2px 8px #444444;
-    justify-content: center;
-  }
-  .HSkillLogo {
-    min-width: 120px;
-    min-height: 120px;
-    width: 20%;
-    height: 20%;
-    display:flex;
-    outline: #444444 1px solid;
-    border-radius: 30px;
-    margin-left: 30px;
-    box-shadow: 2px 2px 8px #444444;
-    justify-content: center;
-  } 
-  .RSkillLogo {
-    min-width: 120px;
-    min-height: 120px;
-    width: 20%;
-    height: 20%;
-    display:flex;
-    outline: #444444 1px solid;
-    border-radius: 30px;
-    margin-left: 30px;
-    filter: grayscale(1);
-    box-shadow: 2px 2px 8px #444444;
-    justify-content: center;
-  }
-
   .main-header {
     font-size: 60px;
     text-align: right;
@@ -187,24 +95,52 @@ const showRtext = ref(false);
     letter-spacing: 4px;
   }
   
+  .SkillLogo {
+    display:flex;
+    max-width: 20vh;
+    max-height: 20vh;
+    
+    outline: #444444 1px solid;
+    border-radius: 30px;
+    box-shadow: 2px 2px 8px #444444;
+    justify-content: center;
+    align-items: center;
+    align-self: center;    
+    aspect-ratio: 1/1;
+
+
+  }
+  .Image {
+    object-fit: cover;
+    object-position: center center;
+    width: 40%;
+    height: 40%;
+  }
 
   .InfoModule {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     font-size: 25px;
-    align-items: center; /* zarovnat vertikálně */
-    gap: 20px; /* mezera mezi logem a textem */
+    max-height: 32%;
+    max-width: 32%;
   }
 
   .main-content {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px;
   }
 
-  /* Přidáno pro plynulé zobrazení textu bez poskakování */
-  .Ctext {
-    max-width: 60%;
-    font-size: 23px;
+  .Text { 
+    max-width: 100%;
+    max-height: 48%;
+    font-size: 1.4rem;
+    word-wrap: normal;
+    text-wrap: wrap;
 
     /* Text je vždy v layoutu, ale neviditelný */
     opacity: 0;
@@ -213,72 +149,10 @@ const showRtext = ref(false);
     /* Přechod opacity */
     transition: opacity 0.67s ease,
     border-radius 0.67s ease;
+    
 
-    /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-    min-width: 900px; 
-    max-width: 900px;
-    min-height: 150px;
-    max-height: 150px;
   }
-
-  /* Viditelný text */
-  .Ctext.visible {
-    border-radius: 30px;
-    border-top: #444444 1px solid;
-    border-bottom: #444444 1px solid;
-    padding: 10px;
-    opacity: 1;
-    visibility: visible;
-  } 
-.Rtext {
-    max-width: 60%;
-    font-size: 23px;
-
-    /* Text je vždy v layoutu, ale neviditelný */
-    opacity: 0;
-    visibility: hidden;
-
-    /* Přechod opacity */
-    transition: opacity 0.67s ease,
-    border-radius 0.67s ease;
-
-    /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-    min-width: 900px; 
-    max-width: 900px;
-    min-height: 150px;
-    max-height: 150px;
-  }
-
-  /* Viditelný text */
-  .Rtext.visible {
-    border-radius: 30px;
-    border-top: #444444 1px solid;
-    border-bottom: #444444 1px solid;
-    padding: 10px;
-    opacity: 1;
-    visibility: visible;
-  } 
-  .Utext {
-    max-width: 60%;
-    font-size: 23px;
-
-    /* Text je vždy v layoutu, ale neviditelný */
-    opacity: 0;
-    visibility: hidden;
-
-    /* Přechod opacity */
-    transition: opacity 0.67s ease,
-    border-radius 0.67s ease;
-
-    /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-    min-width: 900px;
-    max-width: 900px;
-    min-height: 150px;
-    max-height: 150px;
-  }
-
-  /* Viditelný text */
-  .Utext.visible {
+  .Text.visible {
     border-radius: 30px;
     border-top: #444444 1px solid;
     border-bottom: #444444 1px solid;
@@ -286,61 +160,4 @@ const showRtext = ref(false);
     opacity: 1;
     visibility: visible;
   }
-  .Vtext {
-    max-width: 60%;
-    font-size: 23px;
-
-    /* Text je vždy v layoutu, ale neviditelný */
-    opacity: 0;
-    visibility: hidden;
-
-    /* Přechod opacity */
-    transition: opacity 0.67s ease,
-    border-radius 0.67s ease;
-
-    /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-    min-width: 900px;
-    max-width: 900px;
-    min-height: 150px;
-    max-height: 150px;
-  }
-
-  /* Viditelný text */
-  .Vtext.visible {
-    border-radius: 30px;
-    border-top: #444444 1px solid;
-    border-bottom: #444444 1px solid;
-    padding: 10px;
-    opacity: 1;
-    visibility: visible;
-  }
-.Htext {
-  max-width: 60%;
-  font-size: 23px;
-
-  /* Text je vždy v layoutu, ale neviditelný */
-  opacity: 0;
-  visibility: hidden;
-
-  /* Přechod opacity */
-  transition: opacity 0.67s ease,
-  border-radius 0.67s ease;
-
-  /* Minimální šířka, aby text zabíral místo i když je neviditelný */
-  min-width: 900px;
-  max-width: 900px;
-  min-height: 150px;
-  max-height: 150px;
-}
-
-/* Viditelný text */
-.Htext.visible {
-  border-radius: 30px;
-  border-top: #444444 1px solid;
-  border-bottom: #444444 1px solid;
-  padding: 10px;
-  opacity: 1;
-  visibility: visible;
-}
-  
 </style>
